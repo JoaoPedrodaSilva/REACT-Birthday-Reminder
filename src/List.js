@@ -1,18 +1,28 @@
 import React from 'react'
 import Person from './Person.js'
 
-const List = ({people}) => {
-if(people.length > 0) {
-        return (
-        <React.Fragment>        
-            <Person person={people[0]} />
-            <Person person={people[1]} />
-            <Person person={people[2]} />
-            <Person person={people[3]} />
-            <Person person={people[4]} />
+const List = ({people, setPeople}) => {   
+
+    return (
+        <React.Fragment>
+            {
+                people.map(person => {
+                    const removePerson = (id) => {
+                        setPeople(people.filter(person => person.id !== id))
+                    }
+                    return (
+                    <div className='person'>
+                        <Person person={person} />
+                        <button onClick={() => removePerson(person.id)}>
+                            Remove
+                        </button>
+                    </div>
+                    )
+                })
+            }
+            
         </React.Fragment>
-        )
-    }  
+    )      
 }
 
 export default List

@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="App">
       <h3 className='title'>{people.length} BIRTHDAYS TODAY</h3>
-      <List people={people}/>
+      <List people={people} setPeople={setPeople}/>
       <button className='clear-all' onClick={() => setPeople([])}>Clear All</button>
     </main>
   )
