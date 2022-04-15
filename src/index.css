@@ -28,6 +28,7 @@ body {
     margin: 1%;
     color: blue;
     letter-spacing: 0.25rem;
+    margin-bottom: 2%;
   }
 
   .person {
@@ -36,34 +37,53 @@ body {
     align-items: center;
     width: 70%;
     margin: 0.25%;
-    border-radius: 5%;    
+    padding: 1%;
+    border-radius: 3%;    
     background-color: lightblue;
   }
     .remove-person {
-      font-size: 1.5rem;
+      font-size: 2rem;
       width: 25%;
       padding: 2%;
-      margin-right: 5%;
-      background-color: blue;
-      color: white
+      margin-right: 1%;
+      border: none;      
+      background-color: transparent;
+      color: blue
     }
     .image {
-      width: 25%;
+      width: 35%;
       border-radius: 15%;
-      margin: 0 10%;
+      margin: 0 3%;
       border: solid black 1px;
     }
     .name {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      margin: 0 auto;
     }
     .age {
       font-size: 1.25rem;
+      margin: 0 auto;
     }
   
   .clear-all {
     font-size: 1.5rem;
-    width: 70%;
+    width: 72%;
     padding: 1%;
+    margin-top: 1%;
+    border-radius: 3%;
+    border: none;
+    background-color: blue;
+    color: white
+  }
+
+  .refresh {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    width: 60%;
+    padding: 2%;
+    margin-top: 3%;
+    border-radius: 3%;
+    border: none;
     background-color: blue;
     color: white
   }

@@ -5,6 +5,15 @@ import List from './List.js'
 function App() {
   const [people, setPeople] = useState(data)
 
+  if(people.length === 0) {
+    return (
+      <main className="App">
+        <h3 className='title'>{people.length} BIRTHDAYS TODAY</h3>
+        <button className='refresh' onClick={() => setPeople(data)}>Refresh Birthdays</button>
+      </main>
+    ) 
+  }
+
   return (
     <main className="App">
       <h3 className='title'>{people.length} BIRTHDAYS TODAY</h3>
