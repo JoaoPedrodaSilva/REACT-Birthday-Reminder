@@ -13,7 +13,7 @@ const List = ({people, setPeople}) => {
                     return (
                     <div className='person'>
                         <Person person={person} />
-                        <button onClick={() => removePerson(person.id)}>
+                        <button className='remove-person' onClick={() => removePerson(person.id)}>
                             Remove
                         </button>
                     </div>

@@ -39,6 +39,14 @@ body {
     border-radius: 5%;    
     background-color: lightblue;
   }
+    .remove-person {
+      font-size: 1.5rem;
+      width: 25%;
+      padding: 2%;
+      margin-right: 5%;
+      background-color: blue;
+      color: white
+    }
     .image {
       width: 20%;
       border-radius: 15%;
@@ -49,13 +57,13 @@ body {
       font-size: 1.5rem;
     }
     .age {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   
   .clear-all {
     font-size: 1.5rem;
     width: 80%;
-    padding: 1%;
+    padding: 2%;
     background-color: blue;
     color: white
   }
